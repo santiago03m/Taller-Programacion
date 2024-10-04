@@ -68,7 +68,7 @@ namespace ProgramaAnemia
             {
                 if (resultado == "Positivo") PositivosMayores15Hombres++;
                 else NegativosMayores15Hombres++;
-                Console.WriteLine("Parchese");
+               
             }
         }
     }
