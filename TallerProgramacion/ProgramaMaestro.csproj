@@ -43,6 +43,14 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Tiendavideojuegos\InventarioVideojuegos.cs" />
+    <Compile Include="Tiendavideojuegos\TiendaVideojuegos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiendavideojuegos\TiendaVideojuegos.Designer.cs">
+      <DependentUpon>TiendaVideojuegos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiendavideojuegos\Videojuego.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -54,6 +62,9 @@
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiendavideojuegos\TiendaVideojuegos.resx">
+      <DependentUpon>TiendaVideojuegos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

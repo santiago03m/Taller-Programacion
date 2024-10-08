@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProgramaAnemia;
+using TallerProgramacion.TiendVideojuegos;
 
 
 namespace TallerProgramacion
@@ -56,6 +57,12 @@ namespace TallerProgramacion
         private void lblNames_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mostrarVideojuegosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           TiendaVideojuegos tiendaVideojuegos = new TiendaVideojuegos();
+            tiendaVideojuegos.Show();
         }
     }
 }
