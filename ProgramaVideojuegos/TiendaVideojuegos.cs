@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TallerProgramacion.Tiendavideojuegos;
 
-namespace TallerProgramacion.TiendVideojuegos
+namespace ProgramaVideojuegos
 {
     public partial class TiendaVideojuegos : Form
     {
@@ -44,13 +43,6 @@ namespace TallerProgramacion.TiendVideojuegos
             {
                 MessageBox.Show("No hay videojuegos en el inventario.");
             }
-        }
-
-        private void buttonRegresar_Click(object sender, EventArgs e)
-        {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-            this.Close();
         }
     }
 

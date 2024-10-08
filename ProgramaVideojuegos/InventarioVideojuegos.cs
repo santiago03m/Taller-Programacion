@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TallerProgramacion.Tiendavideojuegos
+namespace ProgramaVideojuegos
 {
     public class InventarioVideojuegos
     {
