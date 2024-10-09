@@ -21,13 +21,11 @@ namespace TallerProgramacion
             lblFecha.Text = $"Fecha: {DateTime.Now.ToString("dd/MM/yyyy")}";
         }
 
-        // Evento para cerrar la aplicación
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        // Evento para abrir el formulario de Anemia
         private void anemiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AnemiaForm anemiaForm = new AnemiaForm();
