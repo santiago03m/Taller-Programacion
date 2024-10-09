@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.programaAnemiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiendaVideojuegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +53,7 @@
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
             this.menuStripMain.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStripMain.Size = new System.Drawing.Size(703, 24);
+            this.menuStripMain.Size = new System.Drawing.Size(703, 28);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "menuStrip1";
             this.menuStripMain.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -60,33 +61,34 @@
             // programaAnemiaToolStripMenuItem
             // 
             this.programaAnemiaToolStripMenuItem.Name = "programaAnemiaToolStripMenuItem";
-            this.programaAnemiaToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.programaAnemiaToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.programaAnemiaToolStripMenuItem.Text = "Programa Anemia";
             this.programaAnemiaToolStripMenuItem.Click += new System.EventHandler(this.anemiaToolStripMenuItem_Click);
             // 
             // tiendaVideojuegosToolStripMenuItem
             // 
             this.tiendaVideojuegosToolStripMenuItem.Name = "tiendaVideojuegosToolStripMenuItem";
-            this.tiendaVideojuegosToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.tiendaVideojuegosToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.tiendaVideojuegosToolStripMenuItem.Text = "Tienda Videojuegos";
             // 
             // empresaViajesToolStripMenuItem
             // 
+            this.empresaViajesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("empresaViajesToolStripMenuItem.Image")));
             this.empresaViajesToolStripMenuItem.Name = "empresaViajesToolStripMenuItem";
-            this.empresaViajesToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.empresaViajesToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.empresaViajesToolStripMenuItem.Text = "Empresa Viajes";
             this.empresaViajesToolStripMenuItem.Click += new System.EventHandler(this.empresaViajesToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Location = new System.Drawing.Point(0, 25);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(703, 310);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +128,7 @@
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.menuStripMain);
             this.MainMenuStrip = this.menuStripMain;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
