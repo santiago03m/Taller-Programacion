@@ -66,7 +66,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmpresaVaij\EmpresaViaje.csproj">
+    <ProjectReference Include="..\EmpresaViajes\EmpresaViaje.csproj">
       <Project>{1e7fc316-1b4c-471d-9e04-890ab74c1971}</Project>
       <Name>EmpresaViaje</Name>
     </ProjectReference>
