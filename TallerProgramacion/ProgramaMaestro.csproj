@@ -57,6 +57,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmpresaVaij\EmpresaViaje.csproj">
+      <Project>{1e7fc316-1b4c-471d-9e04-890ab74c1971}</Project>
+      <Name>EmpresaViaje</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProgramaAnemia\ProgramaAnemia.csproj">
       <Project>{cd6585cc-543d-45f3-afe3-f586dc6c88e5}</Project>
       <Name>ProgramaAnemia</Name>

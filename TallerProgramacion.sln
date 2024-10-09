@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramaMaestro", "TallerPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramaAnemia", "ProgramaAnemia\ProgramaAnemia.csproj", "{CD6585CC-543D-45F3-AFE3-F586DC6C88E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpresaViajes", "EmpresaVaij\EmpresaViajes.csproj", "{1E7FC316-1B4C-471D-9E04-890AB74C1971}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpresaViaje", "EmpresaVaij\EmpresaViaje.csproj", "{1E7FC316-1B4C-471D-9E04-890AB74C1971}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

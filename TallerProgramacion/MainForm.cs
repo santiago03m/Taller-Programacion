@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProgramaAnemia;
+using EmpresaViaje;
 
 
 namespace TallerProgramacion
@@ -56,6 +57,17 @@ namespace TallerProgramacion
         private void lblNames_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBoxLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void empresaViajesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViajesFormulario viajesForm = new ViajesFormulario();
+            viajesForm.Show();
         }
     }
 }

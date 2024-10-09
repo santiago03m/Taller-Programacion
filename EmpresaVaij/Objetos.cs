@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmpresaVaij
+namespace EmpresaViaje
 {
     public class Viaje
     {
@@ -39,23 +39,24 @@ namespace EmpresaVaij
                 case "suite":
                     return 90000;
                     break;
+                    
                 case "normal":
                     return 55000;
                     break;
             
             }
-            return 0;
+            return 90000;
         }
 
     }
-    public class Objetos : Viaje
+    public class Avion : Viaje
     {
         double DuracionHorasViajes;
         double ValorTasaAeroportuaria;
         double ValorTransporteAeropuerto;
         double ValorMinutoVuelo;
 
-        public Objetos(string destino, string Nombre, int cedula, int DiasEstadia, string tipoHabitacion, string FechaViaje, double duracionHorasViajes, double valorTasaAeroportuaria, double valorTransporteAeropuerto, double valorMinutoVuelo) : base(destino, Nombre, cedula, DiasEstadia,tipoHabitacion,FechaViaje)
+        public Avion(string destino, string Nombre, int cedula, int DiasEstadia, string tipoHabitacion, string FechaViaje, double duracionHorasViajes, double valorTasaAeroportuaria, double valorTransporteAeropuerto, double valorMinutoVuelo) : base(destino, Nombre, cedula, DiasEstadia,tipoHabitacion,FechaViaje)
         {
             DuracionHorasViajes1 = duracionHorasViajes;
             ValorTasaAeroportuaria1 = valorTasaAeroportuaria;
@@ -71,7 +72,7 @@ namespace EmpresaVaij
         
         public double Total()
         {
-            return ((ValorHabitacion() * DiasEstadia) + (DuracionHorasViajes1 * (ValorMinutoVuelo1*60)) + ValorTasaAeroportuaria1 + ValorTransporteAeropuerto1);
+            return ((ValorHabitacion() * DiasEstadia) + (DuracionHorasViajes1 * 60 * ValorMinutoVuelo1) + ValorTasaAeroportuaria1 + ValorTransporteAeropuerto1);
         }
     }
     public class Barco : Viaje
@@ -84,14 +85,12 @@ namespace EmpresaVaij
         public string TipoCamarote1 { get => TipoCamarote; set => TipoCamarote = value; }
         public double ValorTransporteMuelle1 { get => ValorTransporteMuelle; set => ValorTransporteMuelle = value; }
 
-        public Barco(string destino, string Nombre, int cedula, int DiasEstadia, string tipoHabitacion, string FechaViaje, double duracionDiasViaje, string tipoCamarote, double valorTransporteMuelle, double duracionDiasViaje1, string tipoCamarote1, double valorTransporteMuelle1) : base(destino,Nombre, cedula, DiasEstadia, tipoHabitacion, FechaViaje)
+        public Barco(string destino, string Nombre, int cedula, int DiasEstadia, string tipoHabitacion, string FechaViaje, double duracionDiasViaje, string tipoCamarote, double valorTransporteMuelle) : base(destino,Nombre, cedula, DiasEstadia, tipoHabitacion, FechaViaje)
         {
             DuracionDiasViaje = duracionDiasViaje;
             TipoCamarote = tipoCamarote;
             ValorTransporteMuelle = valorTransporteMuelle;
-            DuracionDiasViaje1 = duracionDiasViaje1;
-            TipoCamarote1 = tipoCamarote1;
-            ValorTransporteMuelle1 = valorTransporteMuelle1;
+            
         }
         public double ValorCamarote()
         {
@@ -111,7 +110,7 @@ namespace EmpresaVaij
         }
         public double Total()
         {
-            return ((DuracionDiasViaje1 * ValorCamarote()) + (ValorHabitacion() * DiasEstadia) + ValorTransporteMuelle);
+            return ((DuracionDiasViaje * ValorCamarote()) + (ValorHabitacion() * DiasEstadia) + ValorTransporteMuelle);
         }
     }
 

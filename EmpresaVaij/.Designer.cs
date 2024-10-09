@@ -1,6 +1,6 @@
-﻿namespace EmpresaVaij
+﻿namespace EmpresaViaje
 {
-    partial class Form1
+    partial class ViajesFormulario
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViajesFormulario));
             this.LabelTitulo = new System.Windows.Forms.Label();
             this.LabelOpciones = new System.Windows.Forms.Label();
             this.BotonBarco = new System.Windows.Forms.Button();
@@ -36,13 +36,16 @@
             this.PictureBoxBarco = new System.Windows.Forms.PictureBox();
             this.ImageBoxAvion = new System.Windows.Forms.PictureBox();
             this.GroupBoxIngresoDatos = new System.Windows.Forms.GroupBox();
-            this.NumericoValorMinuto = new System.Windows.Forms.NumericUpDown();
+            this.BotonEliminar = new System.Windows.Forms.Button();
+            this.TextBoxValorTransporte = new System.Windows.Forms.TextBox();
+            this.TextBoxTasaAero = new System.Windows.Forms.TextBox();
+            this.TextBoxValorMinuto = new System.Windows.Forms.TextBox();
+            this.TextBoxTotal = new System.Windows.Forms.TextBox();
+            this.BotonTotal = new System.Windows.Forms.Button();
             this.LabelValorMinutoVuelo = new System.Windows.Forms.Label();
             this.FechaDeViaje = new System.Windows.Forms.DateTimePicker();
             this.LabelFecha = new System.Windows.Forms.Label();
-            this.NumericoValorTransporte = new System.Windows.Forms.NumericUpDown();
             this.LabelTransporte = new System.Windows.Forms.Label();
-            this.NumericoTasaAeropuerto = new System.Windows.Forms.NumericUpDown();
             this.LabelTasaAeropuerto = new System.Windows.Forms.Label();
             this.ListaHabitación = new System.Windows.Forms.ListBox();
             this.LabelHabitacion = new System.Windows.Forms.Label();
@@ -58,13 +61,9 @@
             this.TextBoxNombre = new System.Windows.Forms.TextBox();
             this.TextBoxDestino = new System.Windows.Forms.TextBox();
             this.LabelDestino = new System.Windows.Forms.Label();
-            this.BotonTotal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxBarco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImageBoxAvion)).BeginInit();
             this.GroupBoxIngresoDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericoValorMinuto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericoValorTransporte)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericoTasaAeropuerto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericoDiasEstadia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +93,7 @@
             // BotonBarco
             // 
             this.BotonBarco.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BotonBarco.Location = new System.Drawing.Point(176, 138);
+            this.BotonBarco.Location = new System.Drawing.Point(167, 91);
             this.BotonBarco.Name = "BotonBarco";
             this.BotonBarco.Size = new System.Drawing.Size(130, 33);
             this.BotonBarco.TabIndex = 2;
@@ -104,7 +103,7 @@
             // 
             // BotonAvion
             // 
-            this.BotonAvion.Location = new System.Drawing.Point(745, 138);
+            this.BotonAvion.Location = new System.Drawing.Point(747, 91);
             this.BotonAvion.Name = "BotonAvion";
             this.BotonAvion.Size = new System.Drawing.Size(104, 33);
             this.BotonAvion.TabIndex = 3;
@@ -115,7 +114,7 @@
             // PictureBoxBarco
             // 
             this.PictureBoxBarco.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxBarco.Image")));
-            this.PictureBoxBarco.Location = new System.Drawing.Point(129, 177);
+            this.PictureBoxBarco.Location = new System.Drawing.Point(131, 130);
             this.PictureBoxBarco.Name = "PictureBoxBarco";
             this.PictureBoxBarco.Size = new System.Drawing.Size(195, 130);
             this.PictureBoxBarco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +124,7 @@
             // ImageBoxAvion
             // 
             this.ImageBoxAvion.Image = ((System.Drawing.Image)(resources.GetObject("ImageBoxAvion.Image")));
-            this.ImageBoxAvion.Location = new System.Drawing.Point(676, 177);
+            this.ImageBoxAvion.Location = new System.Drawing.Point(682, 127);
             this.ImageBoxAvion.Name = "ImageBoxAvion";
             this.ImageBoxAvion.Size = new System.Drawing.Size(279, 133);
             this.ImageBoxAvion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,14 +135,16 @@
             // GroupBoxIngresoDatos
             // 
             this.GroupBoxIngresoDatos.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.GroupBoxIngresoDatos.Controls.Add(this.BotonEliminar);
+            this.GroupBoxIngresoDatos.Controls.Add(this.TextBoxValorTransporte);
+            this.GroupBoxIngresoDatos.Controls.Add(this.TextBoxTasaAero);
+            this.GroupBoxIngresoDatos.Controls.Add(this.TextBoxValorMinuto);
+            this.GroupBoxIngresoDatos.Controls.Add(this.TextBoxTotal);
             this.GroupBoxIngresoDatos.Controls.Add(this.BotonTotal);
-            this.GroupBoxIngresoDatos.Controls.Add(this.NumericoValorMinuto);
             this.GroupBoxIngresoDatos.Controls.Add(this.LabelValorMinutoVuelo);
             this.GroupBoxIngresoDatos.Controls.Add(this.FechaDeViaje);
             this.GroupBoxIngresoDatos.Controls.Add(this.LabelFecha);
-            this.GroupBoxIngresoDatos.Controls.Add(this.NumericoValorTransporte);
             this.GroupBoxIngresoDatos.Controls.Add(this.LabelTransporte);
-            this.GroupBoxIngresoDatos.Controls.Add(this.NumericoTasaAeropuerto);
             this.GroupBoxIngresoDatos.Controls.Add(this.LabelTasaAeropuerto);
             this.GroupBoxIngresoDatos.Controls.Add(this.ListaHabitación);
             this.GroupBoxIngresoDatos.Controls.Add(this.LabelHabitacion);
@@ -159,7 +160,7 @@
             this.GroupBoxIngresoDatos.Controls.Add(this.TextBoxNombre);
             this.GroupBoxIngresoDatos.Controls.Add(this.TextBoxDestino);
             this.GroupBoxIngresoDatos.Controls.Add(this.LabelDestino);
-            this.GroupBoxIngresoDatos.Location = new System.Drawing.Point(71, 359);
+            this.GroupBoxIngresoDatos.Location = new System.Drawing.Point(66, 275);
             this.GroupBoxIngresoDatos.Name = "GroupBoxIngresoDatos";
             this.GroupBoxIngresoDatos.Size = new System.Drawing.Size(968, 417);
             this.GroupBoxIngresoDatos.TabIndex = 6;
@@ -168,17 +169,55 @@
             this.GroupBoxIngresoDatos.Visible = false;
             this.GroupBoxIngresoDatos.Enter += new System.EventHandler(this.GroupBoxIngresoDatos_Enter);
             // 
-            // NumericoValorMinuto
+            // BotonEliminar
             // 
-            this.NumericoValorMinuto.Location = new System.Drawing.Point(218, 353);
-            this.NumericoValorMinuto.Name = "NumericoValorMinuto";
-            this.NumericoValorMinuto.Size = new System.Drawing.Size(120, 26);
-            this.NumericoValorMinuto.TabIndex = 22;
-            this.NumericoValorMinuto.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.BotonEliminar.Location = new System.Drawing.Point(810, 48);
+            this.BotonEliminar.Name = "BotonEliminar";
+            this.BotonEliminar.Size = new System.Drawing.Size(75, 37);
+            this.BotonEliminar.TabIndex = 28;
+            this.BotonEliminar.Text = "Eliminar";
+            this.BotonEliminar.UseVisualStyleBackColor = true;
+            this.BotonEliminar.Click += new System.EventHandler(this.BotonEliminar_Click);
+            // 
+            // TextBoxValorTransporte
+            // 
+            this.TextBoxValorTransporte.Location = new System.Drawing.Point(669, 290);
+            this.TextBoxValorTransporte.Name = "TextBoxValorTransporte";
+            this.TextBoxValorTransporte.Size = new System.Drawing.Size(100, 26);
+            this.TextBoxValorTransporte.TabIndex = 27;
+            // 
+            // TextBoxTasaAero
+            // 
+            this.TextBoxTasaAero.Location = new System.Drawing.Point(617, 240);
+            this.TextBoxTasaAero.Name = "TextBoxTasaAero";
+            this.TextBoxTasaAero.Size = new System.Drawing.Size(100, 26);
+            this.TextBoxTasaAero.TabIndex = 26;
+            // 
+            // TextBoxValorMinuto
+            // 
+            this.TextBoxValorMinuto.Location = new System.Drawing.Point(218, 353);
+            this.TextBoxValorMinuto.Name = "TextBoxValorMinuto";
+            this.TextBoxValorMinuto.Size = new System.Drawing.Size(100, 26);
+            this.TextBoxValorMinuto.TabIndex = 25;
+            // 
+            // TextBoxTotal
+            // 
+            this.TextBoxTotal.Location = new System.Drawing.Point(678, 354);
+            this.TextBoxTotal.Name = "TextBoxTotal";
+            this.TextBoxTotal.Size = new System.Drawing.Size(100, 26);
+            this.TextBoxTotal.TabIndex = 24;
+            this.TextBoxTotal.TextChanged += new System.EventHandler(this.TextBoxTotal_TextChanged);
+            // 
+            // BotonTotal
+            // 
+            this.BotonTotal.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BotonTotal.Location = new System.Drawing.Point(440, 353);
+            this.BotonTotal.Name = "BotonTotal";
+            this.BotonTotal.Size = new System.Drawing.Size(210, 26);
+            this.BotonTotal.TabIndex = 23;
+            this.BotonTotal.Text = "Calcular Precio";
+            this.BotonTotal.UseVisualStyleBackColor = false;
+            this.BotonTotal.Click += new System.EventHandler(this.BotonTotal_Click_1);
             // 
             // LabelValorMinutoVuelo
             // 
@@ -206,18 +245,6 @@
             this.LabelFecha.Text = "Fecha de Viaje:";
             this.LabelFecha.Click += new System.EventHandler(this.LabelFecha_Click);
             // 
-            // NumericoValorTransporte
-            // 
-            this.NumericoValorTransporte.Location = new System.Drawing.Point(613, 288);
-            this.NumericoValorTransporte.Name = "NumericoValorTransporte";
-            this.NumericoValorTransporte.Size = new System.Drawing.Size(120, 26);
-            this.NumericoValorTransporte.TabIndex = 18;
-            this.NumericoValorTransporte.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // LabelTransporte
             // 
             this.LabelTransporte.AutoSize = true;
@@ -226,18 +253,6 @@
             this.LabelTransporte.Size = new System.Drawing.Size(190, 19);
             this.LabelTransporte.TabIndex = 17;
             this.LabelTransporte.Text = "Valor del trasnsporte a muelle:";
-            // 
-            // NumericoTasaAeropuerto
-            // 
-            this.NumericoTasaAeropuerto.Location = new System.Drawing.Point(617, 240);
-            this.NumericoTasaAeropuerto.Name = "NumericoTasaAeropuerto";
-            this.NumericoTasaAeropuerto.Size = new System.Drawing.Size(120, 26);
-            this.NumericoTasaAeropuerto.TabIndex = 16;
-            this.NumericoTasaAeropuerto.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // LabelTasaAeropuerto
             // 
@@ -376,17 +391,7 @@
             this.LabelDestino.TabIndex = 0;
             this.LabelDestino.Text = "Destino: ";
             // 
-            // BotonTotal
-            // 
-            this.BotonTotal.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BotonTotal.Location = new System.Drawing.Point(440, 353);
-            this.BotonTotal.Name = "BotonTotal";
-            this.BotonTotal.Size = new System.Drawing.Size(210, 26);
-            this.BotonTotal.TabIndex = 23;
-            this.BotonTotal.Text = "Calcular Precio";
-            this.BotonTotal.UseVisualStyleBackColor = false;
-            // 
-            // Form1
+            // ViajesFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -401,16 +406,13 @@
             this.Controls.Add(this.LabelTitulo);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ViajesFormulario";
+            this.Text = "Viajes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxBarco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImageBoxAvion)).EndInit();
             this.GroupBoxIngresoDatos.ResumeLayout(false);
             this.GroupBoxIngresoDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericoValorMinuto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericoValorTransporte)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericoTasaAeropuerto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericoDiasEstadia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -442,13 +444,15 @@
         private System.Windows.Forms.Label LabelCamarote;
         private System.Windows.Forms.DateTimePicker FechaDeViaje;
         private System.Windows.Forms.Label LabelFecha;
-        private System.Windows.Forms.NumericUpDown NumericoValorTransporte;
         private System.Windows.Forms.Label LabelTransporte;
-        private System.Windows.Forms.NumericUpDown NumericoTasaAeropuerto;
         private System.Windows.Forms.Label LabelTasaAeropuerto;
-        private System.Windows.Forms.NumericUpDown NumericoValorMinuto;
         private System.Windows.Forms.Label LabelValorMinutoVuelo;
         private System.Windows.Forms.Button BotonTotal;
+        private System.Windows.Forms.TextBox TextBoxTotal;
+        private System.Windows.Forms.TextBox TextBoxValorMinuto;
+        private System.Windows.Forms.TextBox TextBoxValorTransporte;
+        private System.Windows.Forms.TextBox TextBoxTasaAero;
+        private System.Windows.Forms.Button BotonEliminar;
     }
 }
 

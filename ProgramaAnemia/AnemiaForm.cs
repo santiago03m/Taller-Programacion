@@ -94,5 +94,10 @@ namespace ProgramaAnemia
             lblPositivosMayores15Hombres.Text = $"Mayores de 15 (Hombres) Positivos: {estadisticas.PositivosMayores15Hombres}";
             lblNegativosMayores15Hombres.Text = $"Mayores de 15 (Hombres) Negativos: {estadisticas.NegativosMayores15Hombres}";
         }
+
+        private void gbEvaluacion_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
