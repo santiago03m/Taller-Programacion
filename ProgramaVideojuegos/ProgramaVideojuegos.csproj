@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E162459-16E1-44DA-86F0-0B2499E3C31D}</ProjectGuid>
+    <ProjectGuid>{BD0ECE8E-49D6-4055-AEAF-AB53823660BD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TallerProgramacion</RootNamespace>
-    <AssemblyName>TallerProgramacion</AssemblyName>
+    <RootNamespace>ProgramaVideojuegos</RootNamespace>
+    <AssemblyName>ProgramaVideojuegos</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -36,48 +36,35 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="InventarioVideojuegos.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="TiendaVideojuegos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiendaVideojuegos.Designer.cs">
+      <DependentUpon>TiendaVideojuegos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Videojuego.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiendaVideojuegos.resx">
+      <DependentUpon>TiendaVideojuegos.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EmpresaViajes\EmpresaViaje.csproj">
-      <Project>{1e7fc316-1b4c-471d-9e04-890ab74c1971}</Project>
-      <Name>EmpresaViaje</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ProgramaAnemia\ProgramaAnemia.csproj">
-      <Project>{cd6585cc-543d-45f3-afe3-f586dc6c88e5}</Project>
-      <Name>ProgramaAnemia</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ProgramaVideojuegos\ProgramaVideojuegos.csproj">
-      <Project>{bd0ece8e-49d6-4055-aeaf-ab53823660bd}</Project>
-      <Name>ProgramaVideojuegos</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

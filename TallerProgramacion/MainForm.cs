@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProgramaAnemia;
 using EmpresaViaje;
-
+using ProgramaVideojuegos;
 
 namespace TallerProgramacion
 {
@@ -66,6 +66,12 @@ namespace TallerProgramacion
         {
             ViajesFormulario viajesForm = new ViajesFormulario();
             viajesForm.Show();
+        }
+
+        private void tiendaVideojuegosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TiendaVideojuegos videoJuegosForm = new TiendaVideojuegos();
+            videoJuegosForm.Show();
         }
     }
 }
