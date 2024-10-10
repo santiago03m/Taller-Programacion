@@ -57,10 +57,17 @@ namespace TallerProgramacion
 
         }
 
-        private void tiendaVideojuegosToolStripMenuItem_Click(object sender, EventArgs e)
+
+
+        private void mostrarVideojuegosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TiendaVideojuegos tiendaVideojuegos = new TiendaVideojuegos();
+            TiendaVideojuegos tiendaVideojuegos= new TiendaVideojuegos();
             tiendaVideojuegos.Show();
+        }
+
+        private void salirToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

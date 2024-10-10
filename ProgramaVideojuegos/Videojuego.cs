@@ -9,12 +9,12 @@ namespace ProgramaVideojuegos
 {
     public class Videojuego
     {
-        private int codigo;
+        private string codigo;
         private string nombre;
         private string autor;
         private bool estado;
 
-        public Videojuego(int codigo, string nombre, string autor, bool estado)
+        public Videojuego(string codigo, string nombre, string autor, bool estado)
         {
             this.codigo = codigo;
             this.nombre = nombre;
@@ -22,7 +22,7 @@ namespace ProgramaVideojuegos
             this.estado = estado;
         }
 
-        public int Codigo{ get => codigo; set => codigo = value; }
+        public string Codigo{ get => codigo; set => codigo = value; }
         public string Nombre{ get => nombre; set => nombre = value; }
         public string Autor{ get => autor; set => autor = value; }
         public bool Estado { get => estado; set => estado = value; }
