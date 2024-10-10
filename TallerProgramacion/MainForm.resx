@@ -121,6 +121,20 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tiendaVideojuegosToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAJVSURBVGhD7djLq01RAMfxM6JcZODmcTO4xUyYmRh4pQyk
+        DG6SP4AyZkAiBgYkM2UgeST/wY0UAwbIQMorE6EwIO+3709n12r32+y1zmqfaP3qU/vus85vn73v2o9z
+        eiUlJSUlJSX/UMaxFTuxDRuwEKlZBHWoS53q1jayZybO4zt+Gs9xAfoAs9AUvaYxGqv3uK5vOIcZyBJ9
+        +FtwG3O+4DZu1midXnPvcW4gy04cg9tAF45goGiO6l/qyrvwFYOcY72DcMVd2o/kPIYrzUUXhdN9P/rr
+        6h4iKQvgCuUa1vVp2Y1pQx+8yhm4MTIf0dkEVyb7UEXLbkwbbXdgI6JzAPUiHe1DWIsqWta666iPd8Jp
+        owuEPvjZ/nK1vj6dks6DUwhLZA2aotfq452mo960Xk4iOhcRlsiwdmAS0bmLsEQ0TXZhBapoWevaTiFN
+        DzdtwulUn0J3EJ2nCEtCXZ/ETxCdV3BlEl5G2x55p+0OvER03sGV5RROp6YbmbxFdIb5DFSnp9jofIYr
+        G4ZPiM6fzoGuvUB0Uh7kdLLtxnroDh3Suj1IOTCPEJ3LcGVN7mEe/pYxPIDraHIJ0TkKV+Z8xFK0zWJ8
+        gOtyDiM6m+HKHE2b2OyF63ImEJ3peA9XGNIdexpiM4JncJ0h3Y80Nikn4EpD25GaHXCdoeNIzly8gSuW
+        +5iC1EyFvjK6bnmNORgougTqRlIv1xeTlRg0q+F+MNOFYRWyZBmuonpe0Q5tQa7o17rqIGkbV7AE2aPr
+        /HLM/v1X3oxC3W3uJSUlJSUlJf9Der1fL9rM/+bR6TgAAAAASUVORK5CYII=
   <data name="empresaViajesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

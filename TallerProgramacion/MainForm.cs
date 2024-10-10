@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProgramaAnemia;
+using ProgramaVideojuegos;
 using EmpresaViaje;
-
 
 namespace TallerProgramacion
 {
@@ -57,6 +57,16 @@ namespace TallerProgramacion
 
         }
 
+        private void mostrarVideojuegosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TiendaVideojuegos tiendaVideojuegos= new TiendaVideojuegos();
+            tiendaVideojuegos.Show();
+        }
+
+        private void salirToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void pictureBoxLogo_Click(object sender, EventArgs e)
         {
 
