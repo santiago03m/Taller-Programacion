@@ -79,5 +79,17 @@
       <Name>ProgramaVideojuegos</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMain\AnemiaMain.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMain\VideojuegosMain.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMain\SalirMain.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMain\ParchenseMain.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

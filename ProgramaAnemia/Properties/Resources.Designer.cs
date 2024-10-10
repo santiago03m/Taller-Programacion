@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TallerProgramacion.Properties {
+namespace ProgramaAnemia.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace TallerProgramacion.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TallerProgramacion.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ProgramaAnemia.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,36 +66,6 @@ namespace TallerProgramacion.Properties {
         internal static System.Drawing.Bitmap AnemiaMain {
             get {
                 object obj = ResourceManager.GetObject("AnemiaMain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ParchenseMain {
-            get {
-                object obj = ResourceManager.GetObject("ParchenseMain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SalirMain {
-            get {
-                object obj = ResourceManager.GetObject("SalirMain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap VideojuegosMain {
-            get {
-                object obj = ResourceManager.GetObject("VideojuegosMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
