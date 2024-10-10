@@ -74,10 +74,6 @@
       <Project>{cd6585cc-543d-45f3-afe3-f586dc6c88e5}</Project>
       <Name>ProgramaAnemia</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProgramaVideojuegos\ProgramaVideojuegos.csproj">
-      <Project>{bd0ece8e-49d6-4055-aeaf-ab53823660bd}</Project>
-      <Name>ProgramaVideojuegos</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

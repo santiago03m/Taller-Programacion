@@ -32,13 +32,11 @@
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.programaAnemiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiendaVideojuegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.empresaViajesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.lblNombres = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.mostrarVideojuegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
@@ -69,18 +67,9 @@
             // 
             // tiendaVideojuegosToolStripMenuItem
             // 
-            this.tiendaVideojuegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator1,
-            this.mostrarVideojuegosToolStripMenuItem});
-            this.tiendaVideojuegosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tiendaVideojuegosToolStripMenuItem.Image")));
             this.tiendaVideojuegosToolStripMenuItem.Name = "tiendaVideojuegosToolStripMenuItem";
-            this.tiendaVideojuegosToolStripMenuItem.Size = new System.Drawing.Size(142, 24)
+            this.tiendaVideojuegosToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.tiendaVideojuegosToolStripMenuItem.Text = "Tienda Videojuegos";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(191, 6);
             // 
             // empresaViajesToolStripMenuItem
             // 
@@ -95,12 +84,11 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 24);
             this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click_1);
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Location = new System.Drawing.Point(0, 25);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(703, 310);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,13 +118,6 @@
             this.lblFecha.Text = "Fecha: [Actual]";
             this.lblFecha.Click += new System.EventHandler(this.label1_Click);
             // 
-            // mostrarVideojuegosToolStripMenuItem
-            // 
-            this.mostrarVideojuegosToolStripMenuItem.Name = "mostrarVideojuegosToolStripMenuItem";
-            this.mostrarVideojuegosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.mostrarVideojuegosToolStripMenuItem.Text = "Inventario videojuegos";
-            this.mostrarVideojuegosToolStripMenuItem.Click += new System.EventHandler(this.mostrarVideojuegosToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,7 +128,7 @@
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.menuStripMain);
             this.MainMenuStrip = this.menuStripMain;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -169,7 +150,5 @@
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label lblNombres;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem mostrarVideojuegosToolStripMenuItem;
     }
 }
