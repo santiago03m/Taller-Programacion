@@ -181,37 +181,38 @@
             // 
             // TextBoxValorTransporte
             // 
-            this.TextBoxValorTransporte.Location = new System.Drawing.Point(669, 290);
+            this.TextBoxValorTransporte.Location = new System.Drawing.Point(550, 350);
             this.TextBoxValorTransporte.Name = "TextBoxValorTransporte";
             this.TextBoxValorTransporte.Size = new System.Drawing.Size(100, 26);
             this.TextBoxValorTransporte.TabIndex = 27;
             // 
             // TextBoxTasaAero
             // 
-            this.TextBoxTasaAero.Location = new System.Drawing.Point(617, 240);
+            this.TextBoxTasaAero.Location = new System.Drawing.Point(550, 287);
             this.TextBoxTasaAero.Name = "TextBoxTasaAero";
             this.TextBoxTasaAero.Size = new System.Drawing.Size(100, 26);
             this.TextBoxTasaAero.TabIndex = 26;
             // 
             // TextBoxValorMinuto
             // 
-            this.TextBoxValorMinuto.Location = new System.Drawing.Point(218, 353);
+            this.TextBoxValorMinuto.Location = new System.Drawing.Point(187, 353);
             this.TextBoxValorMinuto.Name = "TextBoxValorMinuto";
             this.TextBoxValorMinuto.Size = new System.Drawing.Size(100, 26);
             this.TextBoxValorMinuto.TabIndex = 25;
             // 
             // TextBoxTotal
             // 
-            this.TextBoxTotal.Location = new System.Drawing.Point(678, 354);
+            this.TextBoxTotal.Location = new System.Drawing.Point(699, 171);
+            this.TextBoxTotal.Multiline = true;
             this.TextBoxTotal.Name = "TextBoxTotal";
-            this.TextBoxTotal.Size = new System.Drawing.Size(100, 26);
+            this.TextBoxTotal.Size = new System.Drawing.Size(245, 178);
             this.TextBoxTotal.TabIndex = 24;
             this.TextBoxTotal.TextChanged += new System.EventHandler(this.TextBoxTotal_TextChanged);
             // 
             // BotonTotal
             // 
             this.BotonTotal.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BotonTotal.Location = new System.Drawing.Point(440, 353);
+            this.BotonTotal.Location = new System.Drawing.Point(699, 120);
             this.BotonTotal.Name = "BotonTotal";
             this.BotonTotal.Size = new System.Drawing.Size(210, 26);
             this.BotonTotal.TabIndex = 23;
@@ -222,7 +223,7 @@
             // LabelValorMinutoVuelo
             // 
             this.LabelValorMinutoVuelo.AutoSize = true;
-            this.LabelValorMinutoVuelo.Location = new System.Drawing.Point(26, 353);
+            this.LabelValorMinutoVuelo.Location = new System.Drawing.Point(6, 353);
             this.LabelValorMinutoVuelo.Name = "LabelValorMinutoVuelo";
             this.LabelValorMinutoVuelo.Size = new System.Drawing.Size(175, 19);
             this.LabelValorMinutoVuelo.TabIndex = 21;
@@ -230,7 +231,7 @@
             // 
             // FechaDeViaje
             // 
-            this.FechaDeViaje.Location = new System.Drawing.Point(131, 284);
+            this.FechaDeViaje.Location = new System.Drawing.Point(113, 288);
             this.FechaDeViaje.Name = "FechaDeViaje";
             this.FechaDeViaje.Size = new System.Drawing.Size(254, 26);
             this.FechaDeViaje.TabIndex = 20;
@@ -238,7 +239,7 @@
             // LabelFecha
             // 
             this.LabelFecha.AutoSize = true;
-            this.LabelFecha.Location = new System.Drawing.Point(22, 290);
+            this.LabelFecha.Location = new System.Drawing.Point(4, 290);
             this.LabelFecha.Name = "LabelFecha";
             this.LabelFecha.Size = new System.Drawing.Size(103, 19);
             this.LabelFecha.TabIndex = 19;
@@ -248,7 +249,7 @@
             // LabelTransporte
             // 
             this.LabelTransporte.AutoSize = true;
-            this.LabelTransporte.Location = new System.Drawing.Point(417, 288);
+            this.LabelTransporte.Location = new System.Drawing.Point(331, 353);
             this.LabelTransporte.Name = "LabelTransporte";
             this.LabelTransporte.Size = new System.Drawing.Size(190, 19);
             this.LabelTransporte.TabIndex = 17;
@@ -257,7 +258,7 @@
             // LabelTasaAeropuerto
             // 
             this.LabelTasaAeropuerto.AutoSize = true;
-            this.LabelTasaAeropuerto.Location = new System.Drawing.Point(475, 242);
+            this.LabelTasaAeropuerto.Location = new System.Drawing.Point(405, 288);
             this.LabelTasaAeropuerto.Name = "LabelTasaAeropuerto";
             this.LabelTasaAeropuerto.Size = new System.Drawing.Size(132, 19);
             this.LabelTasaAeropuerto.TabIndex = 15;
@@ -270,7 +271,7 @@
             this.ListaHabitación.Items.AddRange(new object[] {
             "Suite\t",
             "Normal"});
-            this.ListaHabitación.Location = new System.Drawing.Point(617, 178);
+            this.ListaHabitación.Location = new System.Drawing.Point(543, 178);
             this.ListaHabitación.Name = "ListaHabitación";
             this.ListaHabitación.Size = new System.Drawing.Size(120, 42);
             this.ListaHabitación.TabIndex = 14;
@@ -278,7 +279,7 @@
             // LabelHabitacion
             // 
             this.LabelHabitacion.AutoSize = true;
-            this.LabelHabitacion.Location = new System.Drawing.Point(471, 178);
+            this.LabelHabitacion.Location = new System.Drawing.Point(406, 178);
             this.LabelHabitacion.Name = "LabelHabitacion";
             this.LabelHabitacion.Size = new System.Drawing.Size(131, 19);
             this.LabelHabitacion.TabIndex = 13;
@@ -292,14 +293,14 @@
             "Lujo",
             "Normal",
             "Economico"});
-            this.ListaCamarote.Location = new System.Drawing.Point(617, 85);
+            this.ListaCamarote.Location = new System.Drawing.Point(530, 85);
             this.ListaCamarote.Name = "ListaCamarote";
             this.ListaCamarote.Size = new System.Drawing.Size(120, 61);
             this.ListaCamarote.TabIndex = 12;
             // 
             // NumericoDiasEstadia
             // 
-            this.NumericoDiasEstadia.Location = new System.Drawing.Point(617, 46);
+            this.NumericoDiasEstadia.Location = new System.Drawing.Point(520, 37);
             this.NumericoDiasEstadia.Name = "NumericoDiasEstadia";
             this.NumericoDiasEstadia.Size = new System.Drawing.Size(120, 26);
             this.NumericoDiasEstadia.TabIndex = 11;
@@ -312,7 +313,7 @@
             // LabelCamarote
             // 
             this.LabelCamarote.AutoSize = true;
-            this.LabelCamarote.Location = new System.Drawing.Point(471, 85);
+            this.LabelCamarote.Location = new System.Drawing.Point(406, 85);
             this.LabelCamarote.Name = "LabelCamarote";
             this.LabelCamarote.Size = new System.Drawing.Size(126, 19);
             this.LabelCamarote.TabIndex = 10;
@@ -321,7 +322,7 @@
             // LabelDiasEstadia
             // 
             this.LabelDiasEstadia.AutoSize = true;
-            this.LabelDiasEstadia.Location = new System.Drawing.Point(471, 46);
+            this.LabelDiasEstadia.Location = new System.Drawing.Point(406, 44);
             this.LabelDiasEstadia.Name = "LabelDiasEstadia";
             this.LabelDiasEstadia.Size = new System.Drawing.Size(108, 19);
             this.LabelDiasEstadia.TabIndex = 8;
@@ -329,7 +330,7 @@
             // 
             // TextBoxTiempoViaje
             // 
-            this.TextBoxTiempoViaje.Location = new System.Drawing.Point(218, 212);
+            this.TextBoxTiempoViaje.Location = new System.Drawing.Point(160, 216);
             this.TextBoxTiempoViaje.Name = "TextBoxTiempoViaje";
             this.TextBoxTiempoViaje.Size = new System.Drawing.Size(100, 26);
             this.TextBoxTiempoViaje.TabIndex = 7;
@@ -337,7 +338,7 @@
             // LabelTiempoViaje
             // 
             this.LabelTiempoViaje.AutoSize = true;
-            this.LabelTiempoViaje.Location = new System.Drawing.Point(62, 215);
+            this.LabelTiempoViaje.Location = new System.Drawing.Point(4, 219);
             this.LabelTiempoViaje.Name = "LabelTiempoViaje";
             this.LabelTiempoViaje.Size = new System.Drawing.Size(156, 19);
             this.LabelTiempoViaje.TabIndex = 6;
@@ -345,7 +346,7 @@
             // 
             // TextBoxCedula
             // 
-            this.TextBoxCedula.Location = new System.Drawing.Point(160, 157);
+            this.TextBoxCedula.Location = new System.Drawing.Point(88, 157);
             this.TextBoxCedula.Name = "TextBoxCedula";
             this.TextBoxCedula.Size = new System.Drawing.Size(158, 26);
             this.TextBoxCedula.TabIndex = 5;
@@ -353,7 +354,7 @@
             // LabelCedula
             // 
             this.LabelCedula.AutoSize = true;
-            this.LabelCedula.Location = new System.Drawing.Point(58, 157);
+            this.LabelCedula.Location = new System.Drawing.Point(9, 157);
             this.LabelCedula.Name = "LabelCedula";
             this.LabelCedula.Size = new System.Drawing.Size(59, 19);
             this.LabelCedula.TabIndex = 4;
@@ -362,7 +363,7 @@
             // LabelNombre
             // 
             this.LabelNombre.AutoSize = true;
-            this.LabelNombre.Location = new System.Drawing.Point(58, 102);
+            this.LabelNombre.Location = new System.Drawing.Point(6, 102);
             this.LabelNombre.Name = "LabelNombre";
             this.LabelNombre.Size = new System.Drawing.Size(67, 19);
             this.LabelNombre.TabIndex = 3;
@@ -370,14 +371,14 @@
             // 
             // TextBoxNombre
             // 
-            this.TextBoxNombre.Location = new System.Drawing.Point(146, 99);
+            this.TextBoxNombre.Location = new System.Drawing.Point(88, 99);
             this.TextBoxNombre.Name = "TextBoxNombre";
             this.TextBoxNombre.Size = new System.Drawing.Size(158, 26);
             this.TextBoxNombre.TabIndex = 2;
             // 
             // TextBoxDestino
             // 
-            this.TextBoxDestino.Location = new System.Drawing.Point(146, 44);
+            this.TextBoxDestino.Location = new System.Drawing.Point(74, 44);
             this.TextBoxDestino.Name = "TextBoxDestino";
             this.TextBoxDestino.Size = new System.Drawing.Size(158, 26);
             this.TextBoxDestino.TabIndex = 1;
@@ -385,7 +386,7 @@
             // LabelDestino
             // 
             this.LabelDestino.AutoSize = true;
-            this.LabelDestino.Location = new System.Drawing.Point(58, 46);
+            this.LabelDestino.Location = new System.Drawing.Point(6, 44);
             this.LabelDestino.Name = "LabelDestino";
             this.LabelDestino.Size = new System.Drawing.Size(62, 19);
             this.LabelDestino.TabIndex = 0;
