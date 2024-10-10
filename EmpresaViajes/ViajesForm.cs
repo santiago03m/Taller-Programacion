@@ -71,6 +71,9 @@ namespace EmpresaViaje
             TextBoxTasaAero.Visible=true;
             LabelTasaAeropuerto.Visible=true;
             TextBoxTasaAero.Enabled=true;
+            LabelValorMinutoVuelo.Visible=true;
+            TextBoxValorMinuto.Visible=true;
+            TextBoxValorMinuto.Enabled=true;
 
         }
 
