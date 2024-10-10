@@ -96,12 +96,13 @@ namespace EmpresaViaje
                 if (BotonBarco.Enabled == false)
                 {
                     Avion avioncito = new Avion(TextBoxDestino.Text, TextBoxNombre.Text, Int32.Parse(TextBoxCedula.Text), Int32.Parse(NumericoDiasEstadia.Value.ToString()), ListaHabitación.Text, FechaDeViaje.Text, Double.Parse(TextBoxTiempoViaje.Text), Double.Parse(TextBoxTasaAero.Text), Double.Parse(TextBoxValorTransporte.Text), Double.Parse(TextBoxValorMinuto.Text));
-                    TextBoxTotal.Text = "$"+ avioncito.Total().ToString();
+                    TextBoxTotal.Text = "El precio de excursión en avion para el señor: " + avioncito.Nombre + "\tCon cedula: " + avioncito.Cedula1 + "\tCon destino a: " + avioncito.Destino1 + "\tEn la fecha: "+avioncito.FechaViaje + "\tEs: $" + avioncito.Total().ToString();
                 }
                 else if (BotonAvion.Enabled == false)
                 {
                     Barco Barquito = new Barco(TextBoxDestino.Text,TextBoxNombre.Text,Int32.Parse(TextBoxCedula.Text),Int32.Parse(NumericoDiasEstadia.Value.ToString()),ListaHabitación.Text,FechaDeViaje.Text,Double.Parse(TextBoxTiempoViaje.Text),ListaCamarote.Text,Double.Parse(TextBoxValorTransporte.Text));
-                    TextBoxTotal.Text = "$"+ Barquito.Total().ToString();
+                    TextBoxTotal.Text = "El precio de excursión en barco para el señor: "+Barquito.Nombre+"\tCon cedula: "+Barquito.Cedula1+"\tCon destino a: "+Barquito.Destino1+"\tEn la fecha: "+Barquito.FechaViaje+"\tEs: $"+Barquito.Total().ToString();
+                    
                 }
                 BotonAvion.Enabled = true;
                 BotonBarco.Enabled = true;
