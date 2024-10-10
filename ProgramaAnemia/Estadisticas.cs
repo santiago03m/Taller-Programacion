@@ -38,7 +38,6 @@ namespace ProgramaAnemia
                 TotalNegativos++;
             }
 
-            // Actualizar contadores por rango de edad
             if (edad <= 1)
             {
                 if (resultado == "Positivo") Positivos0_1++;
@@ -68,6 +67,7 @@ namespace ProgramaAnemia
             {
                 if (resultado == "Positivo") PositivosMayores15Hombres++;
                 else NegativosMayores15Hombres++;
+               
             }
         }
     }

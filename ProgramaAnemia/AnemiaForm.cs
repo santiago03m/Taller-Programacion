@@ -26,20 +26,16 @@ namespace ProgramaAnemia
             double hemoglobina;
             int edad;
 
-            // Validar que se ingrese la hemoglobina y que la edad sea seleccionada
             if (double.TryParse(txtHemoglobina.Text, out hemoglobina) && numericEdad.Value > 0)
             {
                 edad = (int)numericEdad.Value;
                 string genero = cmbGenero.SelectedItem.ToString();
                 string resultado = EvaluarHemoglobina(hemoglobina, edad, genero);
 
-                // Actualizar estadísticas
                 estadisticas.ActualizarContadores(resultado, edad, genero);
 
-                // Mostrar resultado en el label de resultado
                 lblResultado.Text = $"Resultado: {resultado}";
 
-                // Actualizar labels en el group box de estadísticas
                 ActualizarLabelsEstadisticas();
             }
             else
@@ -93,6 +89,11 @@ namespace ProgramaAnemia
             lblNegativosMayores15Mujeres.Text = $"Mayores de 15 (Mujeres) Negativos: {estadisticas.NegativosMayores15Mujeres}";
             lblPositivosMayores15Hombres.Text = $"Mayores de 15 (Hombres) Positivos: {estadisticas.PositivosMayores15Hombres}";
             lblNegativosMayores15Hombres.Text = $"Mayores de 15 (Hombres) Negativos: {estadisticas.NegativosMayores15Hombres}";
+        }
+
+        private void gbEvaluacion_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

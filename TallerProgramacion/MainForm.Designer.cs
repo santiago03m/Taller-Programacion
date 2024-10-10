@@ -74,7 +74,7 @@
             this.mostrarVideojuegosToolStripMenuItem});
             this.tiendaVideojuegosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tiendaVideojuegosToolStripMenuItem.Image")));
             this.tiendaVideojuegosToolStripMenuItem.Name = "tiendaVideojuegosToolStripMenuItem";
-            this.tiendaVideojuegosToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.tiendaVideojuegosToolStripMenuItem.Size = new System.Drawing.Size(142, 24)
             this.tiendaVideojuegosToolStripMenuItem.Text = "Tienda Videojuegos";
             // 
             // toolStripSeparator1
@@ -84,9 +84,11 @@
             // 
             // empresaViajesToolStripMenuItem
             // 
+            this.empresaViajesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("empresaViajesToolStripMenuItem.Image")));
             this.empresaViajesToolStripMenuItem.Name = "empresaViajesToolStripMenuItem";
-            this.empresaViajesToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.empresaViajesToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.empresaViajesToolStripMenuItem.Text = "Empresa Viajes";
+            this.empresaViajesToolStripMenuItem.Click += new System.EventHandler(this.empresaViajesToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -104,6 +106,7 @@
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogo.TabIndex = 1;
             this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
             // 
             // lblNombres
             // 
